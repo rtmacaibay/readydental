@@ -8,6 +8,8 @@ import { blogMenuLinks } from '../components/_config/menu-links';
 import { StyledSection } from '../components/_shared/styled-section';
 
 import healthHistory from '../files/ada_health_history.pdf';
+import arbitration from '../files/arbitration-consent.pdf';
+import financial from '../files/financial-agreement-ii.pdf';
 
 const Styled404Section = styled(StyledSection)`
   min-height: 100vh;
@@ -28,8 +30,8 @@ const PatientForms = () => (
       <SEO title="Patient Forms" />
       <StyledIntroduction>Attached below are download links to our Patient Forms!</StyledIntroduction>
       <ButtonLink label="ADA Health History Form" link={healthHistory} direct="_blank" />
-      <ButtonLink label="Arbitration Consent Form" link={healthHistory} direct="_blank" />
-      <ButtonLink label="Financial Agreement Form" link={healthHistory} direct="_blank" />
+      <ButtonLink label="Arbitration Consent Form" link={arbitration} direct="_blank" />
+      <ButtonLink label="Financial Agreement Form" link={financial} direct="_blank" />
       <StyledDescription>Please print out all 3 files and have them completed before your appointment! These forms are for all patients: new and current.</StyledDescription>
       <TextLink label="Take me home" link="/" />
       <TextLink label="View Ready Dental Notice of Privacy Practices" link="/privacy" />
