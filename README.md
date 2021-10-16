@@ -1,23 +1,15 @@
-[![Build Status](https://travis-ci.com/Knochenmark/gatsby-starter-level-2.svg?branch=master)](https://travis-ci.com/Knochenmark/gatsby-starter-level-2)
-[![GitHub issues](https://img.shields.io/github/issues/knochenmark/gatsby-starter-level-2.svg)](https://github.com/Knochenmark/gatsby-starter-level-2/issues)
-[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/knochenmark/gatsby-starter-level-2.svg)](https://github.com/Knochenmark/gatsby-starter-level-2/pulls)
-![GitHub contributors](https://img.shields.io/github/contributors/knochenmark/gatsby-starter-level-2.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/knochenmark/gatsby-starter-level-2.svg)
-
 <p align="center">
-  <img alt="Level 2" src="./src/assets/logo.svg" width="140" />
+  <img alt="Ready Dental" src="./src/assets/logo.svg" width="140" />
 </p>
 <h1 align="center">
-  Gatsby Starter Portfolio: Level 2
+  Ready Dental Website
 </h1>
 
 <h4>
-  A minimalistic, responsive and easily configurable <a href="https://github.com/gatsbyjs/gatsby" target="_blank">Gatsby</a> starter that will help to bring your portfolio to the next level.
+  A minimalistic, responsive and easily configurable website used for Ready Dental on a<a href="https://github.com/gatsbyjs/gatsby" target="_blank">Gatsby</a> starter.
 </h4>
 
-That's why we like to call our starter **Level 2** or short **LvL2**. The starter comes with several prepared info sections for your portfolio that can be easily configured with the main Gatsby configuration files. For content creation we are using **Markdown** files with Frontmatter attributes that can be easily edited or created.
-
-<h4>Now updated to Gatsby 3!</h4>
+<h4>Below are the instructions to make any amends to the code or creating new pieces for the project.</h4>
 
 # Table of Contents
 
@@ -32,8 +24,6 @@ That's why we like to call our starter **Level 2** or short **LvL2**. The starte
 - [Content Creation](#content-creation)
   - [Creating Blog Posts](#creating-blog-posts)
     - [Frontmatter for blog posts](#frontmatter-for-blog-posts)
-  - [Creating Projects](#creating-projects)
-    - [Frontmatter for projects](#frontmatter-for-projects)
 - [Editing Sections](#editing-sections)
   - [Example by the Cards Section](#example-by-the-cards-section)
 
