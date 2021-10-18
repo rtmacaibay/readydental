@@ -15,6 +15,7 @@ const Index = ({ data }) => {
     author: data.site.siteMetadata.author,
     tagline: data.hero.frontmatter.tagline,
     introduction: data.hero.frontmatter.introduction,
+    description: data.hero.html,
     ctaLabel: data.hero.frontmatter.cta_label,
     ctaLink: data.hero.frontmatter.cta_link,
   };
