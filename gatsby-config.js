@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: '%s · Ready Dental',
     image: '/images/logo.png',
     author: 'Ready Dental',
-    description: 'Ready Dental is a Family & Cosmetic Denistry located in Henderson, NV.',
+    description: 'Ready Dental is a Family & Cosmetic Dentistry located in Henderson, NV.',
     url: 'https://ready-dental.com',
     paginationPageSize: 4, // Amount of posts displayed per listing page.
   },
