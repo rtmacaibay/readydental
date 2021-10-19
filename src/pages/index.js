@@ -18,13 +18,14 @@ const Index = ({ data }) => {
     description: data.hero.html,
     ctaLabel: data.hero.frontmatter.cta_label,
     ctaLink: data.hero.frontmatter.cta_link,
+    hero_image: data.hero.frontmatter.hero_image,
   };
 
   return (
     <Layout menuLinks={indexMenuLinks}>
       <SEO title="Home" />
       <Hero data={heroData} />
-      <Facts />
+      <Facts data={data.facts} />
       <CardGrid cards={data.cards.frontmatter.cards} description={data.cards.html} title="Our Services" id="services" />
       <RecentPosts data={data.blog.edges} />
       <Contact data={data.contact} />
@@ -52,8 +53,23 @@ export const query = graphql`
         tagline
         cta_label
         cta_link
+        hero_image {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
       }
       html
+    }
+
+    facts: markdownRemark(fileAbsolutePath: { regex: "/content/sections/facts/" }) {
+      frontmatter {
+        facts_image {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
+      }
     }
 
     cards: markdownRemark(fileAbsolutePath: { regex: "/content/sections/cards/" }) {

@@ -2,12 +2,9 @@ import styled from '@emotion/styled';
 import React from 'react';
 import Layout from '../components/layout';
 import TextLink from '../components/links/text-link';
-import ButtonLink from '../components/links/button-link';
 import SEO from '../components/seo';
 import { blogMenuLinks } from '../components/_config/menu-links';
 import { StyledSection } from '../components/_shared/styled-section';
-
-import healthHistory from '../files/ada_health_history.pdf';
 
 const Styled404Section = styled(StyledSection)`
   min-height: 100vh;

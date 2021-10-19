@@ -11,6 +11,14 @@ export const StyledImageContainer = styled.div`
   &:hover .gatsby-image-wrapper * {
     transform: scale(1.1);
   }
+
+  & .img * {
+    transition: transform var(--transition-fast) ease-in-out !important;
+  }
+
+  &:hover .img * {
+    transform: scale(1.1);
+  }
 `;
 
 export const StyledStaticImageContainer = styled.div`
@@ -22,6 +30,21 @@ export const StyledStaticImageContainer = styled.div`
   }
 
   .gatsby-image-wrapper:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 98%;
+    height: 98%;
+    border: 2px solid var(--primary-color);
+    transition: all ease var(--transition-fast);
+  }
+
+  .img {
+    overflow: unset !important;
+  }
+
+  .img:before {
     content: '';
     position: absolute;
     bottom: -10px;

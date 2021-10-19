@@ -5,6 +5,8 @@ import ButtonLink from './links/button-link';
 import ScrollIndicator from './scroll-indicator';
 import { mq } from './_shared/media';
 import { StyledSection } from './_shared/styled-section';
+import { StyledStaticImageContainer } from './_shared/styled-image-container';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const StyledHeroSection = styled(StyledSection)`
   min-height: calc(100vh - 2 * var(--header-height));
@@ -14,6 +16,18 @@ const StyledHeroSection = styled(StyledSection)`
     min-height: calc(100vh - var(--header-height));
   }
 `;
+
+const StyledHeroContainer = styled.article`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2.5rem;
+  padding: 2.5rem 0;
+
+  ${mq.gt.sm} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+
 const StyledIntroduction = styled.div`
   color: var(--primary-color);
   font-weight: normal;
@@ -48,15 +62,27 @@ const StyledDescription = styled.div`
 `;
 
 const Hero = ({ data }) => {
-  const { introduction, author, tagline, description, ctaLink, ctaLabel } = data;
+  const { introduction, author, tagline, description, ctaLink, ctaLabel, hero_image 
+  } = data;
+
+  const image = hero_image ? hero_image.childImageSharp.gatsbyImageData : null;
 
   return (
     <StyledHeroSection>
-      <StyledIntroduction>{introduction}</StyledIntroduction>
-      <StyledAuthor>{author}</StyledAuthor>
-      <StyledTagline>{tagline}</StyledTagline>
-      <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
-      <ButtonLink label={ctaLabel} link={ctaLink} direct="_self" />
+      <StyledHeroContainer>
+        <div>
+          <StyledIntroduction>{introduction}</StyledIntroduction>
+          <StyledAuthor>{author}</StyledAuthor>
+          <StyledTagline>{tagline}</StyledTagline>
+          <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
+          <ButtonLink label={ctaLabel} link={ctaLink} direct="_self" />
+        </div>
+        {image && (
+          <StyledStaticImageContainer>
+            <GatsbyImage image={image} alt="smiling lady; credit: Andrea Piacquadio" objectFit="contain" />
+          </StyledStaticImageContainer>
+        )}
+      </StyledHeroContainer>
       <ScrollIndicator />
     </StyledHeroSection>
   );
