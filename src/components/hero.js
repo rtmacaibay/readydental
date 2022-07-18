@@ -41,6 +41,7 @@ const StyledAuthor = styled.h1`
 
   ${mq.gt.xs} {
     font-size: 80px;
+    font-family 'Cooper', serif
   }
 `;
 const StyledTagline = styled.h2`

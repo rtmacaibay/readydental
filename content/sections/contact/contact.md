@@ -1,7 +1,7 @@
 ---
 phone: '(702) 968-0707'
 fax: '(702) 968-0708'
-emergency: '(702) 742-3152'
+emergency: '(702) 350-2721'
 email: 'readydental@yahoo.com'
 address: '4300 E Sunset Rd., Suite B2, Henderson, NV 89014'
 ---

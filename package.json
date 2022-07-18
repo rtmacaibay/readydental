@@ -1,6 +1,6 @@
 {
   "homepage": "https://knochenmark.github.io/gatsby-starter-level-2/",
-  "name": "gatsby-starter-level-2",
+  "name": "ready-dental",
   "private": true,
   "description": "A minimalistic starter to quickly set up and configure your portfolio with Gatsby",
   "version": "0.1.0",
@@ -21,7 +21,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
     "antd": "^4.9.3",
-    "gatsby": "^3.14.1",
+    "gatsby": "^3.14.6",
     "gatsby-plugin-image": "^1.14.0",
     "gatsby-plugin-manifest": "^3.14.0",
     "gatsby-plugin-offline": "^4.14.0",
