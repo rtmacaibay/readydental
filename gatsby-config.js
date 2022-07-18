@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: 'Ready Dental',
@@ -9,6 +11,14 @@ module.exports = {
     paginationPageSize: 4, // Amount of posts displayed per listing page.
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      },
+    },
     `gatsby-plugin-stylus`,
     `gatsby-plugin-react-helmet`,
     {

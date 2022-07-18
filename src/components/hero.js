@@ -38,7 +38,7 @@ const StyledAuthor = styled.h1`
   line-height: 1.1;
   margin: 0;
   word-break: break-word;
-  font-family: 'Cooper', serif
+  font-family: cooper-black-std, serif
 
   ${mq.gt.xs} {
     font-size: 80px;
